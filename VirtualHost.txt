@@ -1,0 +1,18 @@
+<VirtualHost x.x.x.5:80>
+		#konfigurasi Global
+		ServerAdmin webmaster@domain
+		#ServerName www.domain
+		#ServerAlias domain
+		DocumentRoot /var/vhost/vhost.5 
+	<Directory /var/vhost/vhost.5/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/vhost.5.error.log
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+	CustomLog ${APACHE_LOG_DIR}/vhost.5.access.log combined
+</VirtualHost>
