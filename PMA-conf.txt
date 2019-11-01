@@ -6,3 +6,6 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON phpmyadmin.* TO 'pma'@'localhost' IDENTI
 
 #Create Account for access
 GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+
+
+#https://files.phpmyadmin.net/phpMyAdmin/4.9.1/phpMyAdmin-4.9.1-all-languages.tar.gz
